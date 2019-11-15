@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+<Index Version="1" Minor="0">
+	<Repository value="d:/SeniorDesign2/ip_repo">
+	</Repository>
+	<IP>
+		<VLNV value="xilinx.com:user:DNASearch_SmallScale:1.0">
+		</VLNV>
+		<DisplayName value="DNASearch_SmallScale_v1.0">
+		</DisplayName>
+		<Description value="My new AXI IP">
+		</Description>
+		<CoreRevision value="4">
+		</CoreRevision>
+		<ComponentPath value="DNASearch_SmallScale_1.0/component.xml">
+		</ComponentPath>
+		<Families>
+			<Family name="artix7">
+				<Part status="Pre-Production" name="ALL">
+				</Part>
+			</Family>
+		</Families>
+		<Taxonomies>
+			<Taxonomy value="AXI_Peripheral">
+			</Taxonomy>
+		</Taxonomies>
+		<Interfaces>
+			<Interface value="AXI4">
+			</Interface>
+		</Interfaces>
+	</IP>
+	<IP>
+		<VLNV value="xilinx.com:user:DNASearcher_Small:1.0">
+		</VLNV>
+		<DisplayName value="DNASearcher_Small_v1.0">
+		</DisplayName>
+		<Description value="My new AXI IP">
+		</Description>
+		<CoreRevision value="5">
+		</CoreRevision>
+		<ComponentPath value="DNASearcher_Small_1.0/component.xml">
+		</ComponentPath>
+		<Families>
+			<Family name="artix7">
+				<Part status="Pre-Production" name="ALL">
+				</Part>
+			</Family>
+		</Families>
+		<Taxonomies>
+			<Taxonomy value="AXI_Peripheral">
+			</Taxonomy>
+		</Taxonomies>
+		<Interfaces>
+			<Interface value="AXI4">
+			</Interface>
+		</Interfaces>
+	</IP>
+	<IP>
+		<VLNV value="xilinx.com:user:DNASearch_6reg:1.0">
+		</VLNV>
+		<DisplayName value="DNASearch_6reg_v1.0">
+		</DisplayName>
+		<Description value="My new AXI IP">
+		</Description>
+		<CoreRevision value="1">
+		</CoreRevision>
+		<ComponentPath value="DNESearcher_Small_6Reg_1.1/component.xml">
+		</ComponentPath>
+		<Families>
+			<Family name="artix7">
+				<Part status="Pre-Production" name="ALL">
+				</Part>
+			</Family>
+		</Families>
+		<Taxonomies>
+			<Taxonomy value="AXI_Peripheral">
+			</Taxonomy>
+		</Taxonomies>
+		<UpgradesFrom>
+			<Upgrade value="xilinx.com:user:DNESearcher_Small_6Reg:1.1">
+			</Upgrade>
+		</UpgradesFrom>
+		<Interfaces>
+			<Interface value="AXI4">
+			</Interface>
+		</Interfaces>
+	</IP>
+	<IP>
+		<VLNV value="xilinx.com:user:DNA_Search_SmallScale_Debug:1.0">
+		</VLNV>
+		<DisplayName value="DNA_Search_SmallScale_Debug_v1.0">
+		</DisplayName>
+		<Description value="Debug version of (hopefully) functional DNA searching IP">
+		</Description>
+		<CoreRevision value="4">
+		</CoreRevision>
+		<ComponentPath value="DNA_Search_SmallScale_Debug_1.0/component.xml">
+		</ComponentPath>
+		<Families>
+			<Family name="artix7">
+				<Part status="Pre-Production" name="ALL">
+				</Part>
+			</Family>
+		</Families>
+		<Taxonomies>
+			<Taxonomy value="AXI_Peripheral">
+			</Taxonomy>
+		</Taxonomies>
+		<Interfaces>
+			<Interface value="AXI4">
+			</Interface>
+		</Interfaces>
+	</IP>
+	<IP>
+		<VLNV value="xilinx.com:user:PAMSearcher:1.0">
+		</VLNV>
+		<DisplayName value="PAMSearcher_v1.0">
+		</DisplayName>
+		<Description value="Find locations of PAM sequences of nucleotide sequences that are 500 base pairs long.">
+		</Description>
+		<CoreRevision value="3">
+		</CoreRevision>
+		<ComponentPath value="PAMSearcher_1.0/component.xml">
+		</ComponentPath>
+		<Families>
+			<Family name="artix7">
+				<Part status="Pre-Production" name="ALL">
+				</Part>
+			</Family>
+		</Families>
+		<Taxonomies>
+			<Taxonomy value="AXI_Peripheral">
+			</Taxonomy>
+		</Taxonomies>
+		<Interfaces>
+			<Interface value="AXI4">
+			</Interface>
+		</Interfaces>
+	</IP>
+	<IP>
+		<VLNV value="xilinx.com:user:PAMChunkSearch:1.0">
+		</VLNV>
+		<DisplayName value="PAMChunkSearch_v1.0">
+		</DisplayName>
+		<Description value="Search input DNA sequence for PAM sequence by chunk searching">
+		</Description>
+		<CoreRevision value="5">
+		</CoreRevision>
+		<ComponentPath value="PAMChunkSearch_1.0/component.xml">
+		</ComponentPath>
+		<Families>
+			<Family name="artix7">
+				<Part status="Pre-Production" name="ALL">
+				</Part>
+			</Family>
+		</Families>
+		<Taxonomies>
+			<Taxonomy value="AXI_Peripheral">
+			</Taxonomy>
+		</Taxonomies>
+		<Interfaces>
+			<Interface value="AXI4">
+			</Interface>
+		</Interfaces>
+	</IP>
+	<IP>
+		<VLNV value="xilinx.com:user:offTargetSearcher:1.0">
+		</VLNV>
+		<DisplayName value="offTargetSearcher_v1.0">
+		</DisplayName>
+		<Description value="My new AXI IP">
+		</Description>
+		<CoreRevision value="5">
+		</CoreRevision>
+		<ComponentPath value="offTargetSearcher_1.0/component.xml">
+		</ComponentPath>
+		<Families>
+			<Family name="artix7">
+				<Part status="Pre-Production" name="ALL">
+				</Part>
+			</Family>
+		</Families>
+		<Taxonomies>
+			<Taxonomy value="AXI_Peripheral">
+			</Taxonomy>
+		</Taxonomies>
+		<Interfaces>
+			<Interface value="AXI4">
+			</Interface>
+		</Interfaces>
+	</IP>
+</Index>
+

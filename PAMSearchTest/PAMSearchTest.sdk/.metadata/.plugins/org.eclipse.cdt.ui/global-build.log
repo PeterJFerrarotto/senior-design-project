@@ -1,0 +1,2232 @@
+22:08:56 **** Build of project SeniorDesignProject_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/offTargetSearcher_v1_0/src"
+make -C microblaze_0/libsrc/offTargetSearcher_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PAMChunkSearch_v1_0/src"
+make -C microblaze_0/libsrc/PAMChunkSearch_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodSD_v1_0/src"
+make -C microblaze_0/libsrc/PmodSD_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_3/src"
+make -C microblaze_0/libsrc/standalone_v6_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/offTargetSearcher_v1_0/src"
+make -C microblaze_0/libsrc/offTargetSearcher_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling offTargetSearcher..."
+offTargetSearcher_selftest.c: In function 'OFFTARGETSEARCHER_Reg_SelfTest':
+offTargetSearcher_selftest.c:52:66: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( OFFTARGETSEARCHER_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                                  ^~
+offTargetSearcher_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in microblaze_0/libsrc/PAMChunkSearch_v1_0/src"
+make -C microblaze_0/libsrc/PAMChunkSearch_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PAMChunkSearch..."
+PAMChunkSearch_selftest.c: In function 'PAMCHUNKSEARCH_Reg_SelfTest':
+PAMChunkSearch_selftest.c:52:63: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( PAMCHUNKSEARCH_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                               ^~
+PAMChunkSearch_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in microblaze_0/libsrc/PmodSD_v1_0/src"
+make -C microblaze_0/libsrc/PmodSD_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodSD..."
+utility/fs_ff.c: In function 'ff_convert':
+utility/fs_ff.c:557:35: warning: unused parameter 'dir' [-Wunused-parameter]
+ WCHAR ff_convert (WCHAR wch, UINT dir)
+                                   ^~~
+"Running Make libs in microblaze_0/libsrc/standalone_v6_3/src"
+make -C microblaze_0/libsrc/standalone_v6_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+22:10:03 **** Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1988	    268	   3112	   5368	   14f8	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+22:10:51 **** Clean-only build of configuration Debug for project SeniorDesignProject ****
+make clean 
+rm -rf  ./src/main.d  ./src/main.o  SeniorDesignProject.elf.size  SeniorDesignProject.elf
+' '
+22:10:51 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1988	    268	  15400	  17656	   44f8	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+22:11:08 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 222312	   1484	  15612	 239408	  3a730	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+22:15:50 **** Incremental Build of configuration Debug for project SeniorDesignProject ****
+make all 
+make: Nothing to be done for `all'.
+22:17:25 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 221744	   1484	  15612	 238840	  3a4f8	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+22:17:59 **** Incremental Build of configuration Debug for project SeniorDesignProject ****
+make all 
+make: Nothing to be done for `all'.
+22:19:36 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 222332	   1484	  15608	 239424	  3a740	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+22:20:47 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:171:38: warning: conversion lacks type at end of format [-Wformat=]
+    printf("0x%8l", translatedGuideSeq);
+                                      ^
+../src/main.cc:171:38: warning: too many arguments for format [-Wformat-extra-args]
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 222332	   1484	  15608	 239424	  3a740	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+22:20:52 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:171:38: warning: conversion lacks type at end of format [-Wformat=]
+    printf("0x%8l", translatedGuideSeq);
+                                      ^
+../src/main.cc:171:38: warning: too many arguments for format [-Wformat-extra-args]
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 222332	   1484	  15608	 239424	  3a740	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+22:21:04 **** Incremental Build of configuration Debug for project SeniorDesignProject ****
+make all 
+make: Nothing to be done for `all'.
+22:24:59 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:171:36: warning: conversion lacks type at end of format [-Wformat=]
+    printf("%8l", translatedGuideSeq);
+                                    ^
+../src/main.cc:171:36: warning: too many arguments for format [-Wformat-extra-args]
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 222328	   1484	  15612	 239424	  3a740	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+22:25:13 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:171:38: warning: conversion lacks type at end of format [-Wformat=]
+    printf("0x%8l", translatedGuideSeq);
+                                      ^
+../src/main.cc:171:38: warning: too many arguments for format [-Wformat-extra-args]
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 222332	   1484	  15608	 239424	  3a740	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+22:25:25 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 222332	   1484	  15608	 239424	  3a740	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+22:28:47 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 222360	   1484	  15612	 239456	  3a760	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+22:28:56 **** Incremental Build of configuration Debug for project SeniorDesignProject ****
+make all 
+make: Nothing to be done for `all'.
+22:31:16 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 222360	   1484	  15612	 239456	  3a760	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+22:35:36 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 222576	   1484	  15612	 239672	  3a838	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+22:36:09 **** Incremental Build of configuration Debug for project SeniorDesignProject ****
+make all 
+make: Nothing to be done for `all'.
+22:37:35 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 222620	   1484	  15608	 239712	  3a860	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+22:37:40 **** Incremental Build of configuration Debug for project SeniorDesignProject ****
+make all 
+make: Nothing to be done for `all'.
+22:45:42 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 222656	   1484	  15612	 239752	  3a888	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+22:46:48 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 222760	   1484	  15612	 239856	  3a8f0	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+22:46:57 **** Incremental Build of configuration Debug for project SeniorDesignProject ****
+make all 
+make: Nothing to be done for `all'.
+22:48:16 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 222716	   1484	  15608	 239808	  3a8c0	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+22:48:19 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 222684	   1484	  15608	 239776	  3a8a0	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+22:49:02 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 222672	   1484	  15612	 239768	  3a898	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+22:49:06 **** Incremental Build of configuration Debug for project SeniorDesignProject ****
+make all 
+make: Nothing to be done for `all'.
+22:56:32 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:182:47: warning: format '%lx' expects argument of type 'long unsigned int', but argument 2 has type 'long long unsigned int' [-Wformat=]
+   printf("0x%20lx\r\n", fullTranslatedGuideSeq);
+                                               ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 223012	   1484	  15608	 240104	  3a9e8	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+22:56:35 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 223000	   1484	  15612	 240096	  3a9e0	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+22:56:39 **** Incremental Build of configuration Debug for project SeniorDesignProject ****
+make all 
+make: Nothing to be done for `all'.
+22:57:57 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 221728	   1484	  15612	 238824	  3a4e8	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+22:59:06 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 221728	   1484	  15612	 238824	  3a4e8	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:22:43 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:102:5: error: 'guideTotalString' was not declared in this scope
+     guideTotalString = (u8*)realloc(guideTotalString, ((guideCount + 1) * 23));
+     ^~~~~~~~~~~~~~~~
+../src/main.cc:110:5: error: 'guideTotalString' was not declared in this scope
+     guideTotalString = (u8*)realloc(guideTotalString, ((guideCount + 1) * 23));
+     ^~~~~~~~~~~~~~~~
+../src/main.cc:128:15: error: 'guideTotalString' was not declared in this scope
+    guide[i] = guideTotalString[startPos + i];
+               ^~~~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+11:22:56 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:113:15: error: 'guideTotalString' was not declared in this scope
+    guide[i] = guideTotalString[startPos + i];
+               ^~~~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+11:23:01 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:114:20: error: 'guideTotalString' was not declared in this scope
+     currGuide[i] = guideTotalString[startPos + i];
+                    ^~~~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+11:24:49 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:106:34: error: 'guideNum' was not declared in this scope
+    fileName[6] = (((guideCount - guideNum) / 100) % 10) + 48;
+                                  ^~~~~~~~
+../src/main.cc:133:7: warning: unused variable 'offTarget' [-Wunused-variable]
+    u8 offTarget[24];
+       ^~~~~~~~~
+../src/main.cc:178:4: error: 'currFile' was not declared in this scope
+    currFile.fsputs("Loci ");
+    ^~~~~~~~
+../src/main.cc:195:3: error: 'fr' was not declared in this scope
+   fr = currFile.fsclose();
+   ^~
+../src/main.cc:195:8: error: 'currFile' was not declared in this scope
+   fr = currFile.fsclose();
+        ^~~~~~~~
+make: *** [src/main.o] Error 1
+11:24:57 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:106:34: error: 'guideNum' was not declared in this scope
+    fileName[6] = (((guideCount - guideNum) / 100) % 10) + 48;
+                                  ^~~~~~~~
+../src/main.cc:133:7: warning: unused variable 'offTarget' [-Wunused-variable]
+    u8 offTarget[24];
+       ^~~~~~~~~
+../src/main.cc:196:7: error: 'fr' was not declared in this scope
+   if (fr == FR_OK)
+       ^~
+../src/main.cc:164:9: warning: unused variable 'score' [-Wunused-variable]
+   float score = 0;
+         ^~~~~
+make: *** [src/main.o] Error 1
+11:25:19 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:132:7: warning: variable 'guideForOffTarget' set but not used [-Wunused-but-set-variable]
+    u8 guideForOffTarget[21];
+       ^~~~~~~~~~~~~~~~~
+../src/main.cc:133:7: warning: unused variable 'offTarget' [-Wunused-variable]
+    u8 offTarget[24];
+       ^~~~~~~~~
+../src/main.cc:164:9: warning: unused variable 'score' [-Wunused-variable]
+   float score = 0;
+         ^~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211840	   1484	  15612	 228936	  37e48	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:25:28 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:132:7: warning: variable 'guideForOffTarget' set but not used [-Wunused-but-set-variable]
+    u8 guideForOffTarget[21];
+       ^~~~~~~~~~~~~~~~~
+../src/main.cc:133:7: warning: unused variable 'offTarget' [-Wunused-variable]
+    u8 offTarget[24];
+       ^~~~~~~~~
+../src/main.cc:164:9: warning: unused variable 'score' [-Wunused-variable]
+   float score = 0;
+         ^~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211844	   1484	  15608	 228936	  37e48	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:25:50 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:141:58: error: 'currGuide' was not declared in this scope
+     unsigned long translatedGuideSeq = TranslateSequence(currGuide, guideOffset);
+                                                          ^~~~~~~~~
+../src/main.cc:133:7: warning: unused variable 'offTarget' [-Wunused-variable]
+    u8 offTarget[24];
+       ^~~~~~~~~
+../src/main.cc:165:9: warning: unused variable 'score' [-Wunused-variable]
+   float score = 0;
+         ^~~~~
+make: *** [src/main.o] Error 1
+11:26:01 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:133:7: warning: unused variable 'offTarget' [-Wunused-variable]
+    u8 offTarget[24];
+       ^~~~~~~~~
+../src/main.cc:165:9: warning: unused variable 'score' [-Wunused-variable]
+   float score = 0;
+         ^~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211844	   1484	  15608	 228936	  37e48	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:26:50 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:158:5: error: 'score' was not declared in this scope
+     score = scoreOffTarget(offTarget, guide);
+     ^~~~~
+../src/main.cc:186:6: warning: unused variable 'offTarget' [-Wunused-variable]
+   u8 offTarget[24];
+      ^~~~~~~~~
+../src/main.cc:197:7: warning: unused variable 'nextOffTargetPos' [-Wunused-variable]
+   int nextOffTargetPos = offTargetPos;
+       ^~~~~~~~~~~~~~~~
+../src/main.cc:198:9: warning: unused variable 'score' [-Wunused-variable]
+   float score = 0;
+         ^~~~~
+make: *** [src/main.o] Error 1
+11:27:02 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:187:6: warning: unused variable 'offTarget' [-Wunused-variable]
+   u8 offTarget[24];
+      ^~~~~~~~~
+../src/main.cc:198:7: warning: unused variable 'nextOffTargetPos' [-Wunused-variable]
+   int nextOffTargetPos = offTargetPos;
+       ^~~~~~~~~~~~~~~~
+../src/main.cc:199:9: warning: unused variable 'score' [-Wunused-variable]
+   float score = 0;
+         ^~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 219600	   1484	  15612	 236696	  39c98	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:27:19 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 219356	   1484	  15608	 236448	  39ba0	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:27:57 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:179:18: error: 'class DFILE' has no member named 'close'; did you mean 'fsclose'?
+    fr = currFile.close();
+                  ^~~~~
+make: *** [src/main.o] Error 1
+11:28:08 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 220952	   1484	  15612	 238048	  3a1e0	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:28:26 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 220956	   1484	  15608	 238048	  3a1e0	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:28:57 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 167820	   1476	  15608	 184904	  2d248	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:29:08 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11100	   1308	  15464	  27872	   6ce0	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:29:46 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:50:14: error: invalid conversion from 'const char*' to 'u8* {aka unsigned char*}' [-fpermissive]
+  u8* guide = "AACGTAGATATTTAAATGGTAGG";
+              ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:50:6: warning: unused variable 'guide' [-Wunused-variable]
+  u8* guide = "AACGTAGATATTTAAATGGTAGG";
+      ^~~~~
+make: *** [src/main.o] Error 1
+11:29:52 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:50:14: error: invalid conversion from 'const char*' to 'u8* {aka unsigned char*}' [-fpermissive]
+  u8* guide = "AACGTAGATATTTAAATGGT";
+              ^~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:50:6: warning: unused variable 'guide' [-Wunused-variable]
+  u8* guide = "AACGTAGATATTTAAATGGT";
+      ^~~~~
+make: *** [src/main.o] Error 1
+11:30:03 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:50:14: warning: unused variable 'guide' [-Wunused-variable]
+  const char* guide = "AACGTAGATATTTAAATGGT";
+              ^~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11692	   1308	  15464	  28464	   6f30	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:30:07 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:50:14: warning: unused variable 'guide' [-Wunused-variable]
+  const char* guide = "AACGTAGATATTTAAATGGT";
+              ^~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11692	   1308	  15464	  28464	   6f30	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:30:25 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:50:5: warning: unused variable 'guide' [-Wunused-variable]
+  u8 guide[21] = "AACGTAGATATTTAAATGGT";
+     ^~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11752	   1308	  15460	  28520	   6f68	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:31:02 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:53:59: error: 'guideForOffTarget' was not declared in this scope
+      unsigned long translatedGuideSeq = TranslateSequence(guideForOffTarget, guideOffset);
+                                                           ^~~~~~~~~~~~~~~~~
+../src/main.cc:50:5: warning: unused variable 'guide' [-Wunused-variable]
+  u8 guide[21] = "AACGTAGATATTTAAATGGT";
+     ^~~~~
+make: *** [src/main.o] Error 1
+11:31:08 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12624	   1308	  15460	  29392	   72d0	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:31:39 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94040	   1440	  15472	 110952	  1b168	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:31:44 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94040	   1440	  15472	 110952	  1b168	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:31:50 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94044	   1440	  15476	 110960	  1b170	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:32:24 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:61:26: warning: too many arguments for format [-Wformat-extra-args]
+  printf("0x8lx\r\n", test);
+                          ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94144	   1440	  15472	 111056	  1b1d0	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:35:21 **** Incremental Build of configuration Debug for project SeniorDesignProject ****
+make all 
+make: Nothing to be done for `all'.
+11:35:38 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94148	   1440	  15476	 111064	  1b1d8	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:36:09 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94164	   1440	  15476	 111080	  1b1e8	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:36:14 **** Incremental Build of configuration Debug for project SeniorDesignProject ****
+make all 
+make: Nothing to be done for `all'.
+11:36:46 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94164	   1440	  15476	 111080	  1b1e8	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:37:03 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94152	   1440	  15472	 111064	  1b1d8	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:37:09 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94164	   1440	  15476	 111080	  1b1e8	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:37:14 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94164	   1440	  15476	 111080	  1b1e8	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:37:18 **** Incremental Build of configuration Debug for project SeniorDesignProject ****
+make all 
+make: Nothing to be done for `all'.
+11:38:51 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94092	   1440	  15476	 111008	  1b1a0	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:38:56 **** Incremental Build of configuration Debug for project SeniorDesignProject ****
+make all 
+make: Nothing to be done for `all'.
+11:39:26 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94092	   1440	  15476	 111008	  1b1a0	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:39:43 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94092	   1440	  15476	 111008	  1b1a0	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:39:57 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94092	   1440	  15476	 111008	  1b1a0	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:40:10 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94156	   1440	  15476	 111072	  1b1e0	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:40:14 **** Incremental Build of configuration Debug for project SeniorDesignProject ****
+make all 
+make: Nothing to be done for `all'.
+11:41:07 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94092	   1440	  15476	 111008	  1b1a0	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:41:15 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94128	   1440	  15472	 111040	  1b1c0	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:41:20 **** Incremental Build of configuration Debug for project SeniorDesignProject ****
+make all 
+make: Nothing to be done for `all'.
+11:41:31 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94092	   1440	  15476	 111008	  1b1a0	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:41:38 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94656	   1440	  15472	 111568	  1b3d0	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:41:43 **** Incremental Build of configuration Debug for project SeniorDesignProject ****
+make all 
+make: Nothing to be done for `all'.
+11:42:20 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94656	   1440	  15472	 111568	  1b3d0	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:43:12 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94756	   1440	  15476	 111672	  1b438	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:43:18 **** Incremental Build of configuration Debug for project SeniorDesignProject ****
+make all 
+make: Nothing to be done for `all'.
+11:43:48 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94756	   1440	  15476	 111672	  1b438	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:43:53 **** Incremental Build of configuration Debug for project SeniorDesignProject ****
+make all 
+make: Nothing to be done for `all'.
+11:44:12 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94700	   1440	  15476	 111616	  1b400	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:44:17 **** Incremental Build of configuration Debug for project SeniorDesignProject ****
+make all 
+make: Nothing to be done for `all'.
+11:45:31 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94720	   1440	  15472	 111632	  1b410	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:45:36 **** Incremental Build of configuration Debug for project SeniorDesignProject ****
+make all 
+make: Nothing to be done for `all'.
+11:45:50 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94776	   1440	  15472	 111688	  1b448	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:45:55 **** Incremental Build of configuration Debug for project SeniorDesignProject ****
+make all 
+make: Nothing to be done for `all'.
+11:46:18 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 220956	   1484	  15608	 238048	  3a1e0	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:46:32 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 220976	   1484	  15612	 238072	  3a1f8	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:46:56 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 220976	   1484	  15612	 238072	  3a1f8	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:47:01 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 220976	   1484	  15612	 238072	  3a1f8	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:47:06 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 220976	   1484	  15612	 238072	  3a1f8	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:47:13 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 220976	   1484	  15612	 238072	  3a1f8	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:47:17 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 220976	   1484	  15612	 238072	  3a1f8	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:47:27 **** Incremental Build of configuration Debug for project SeniorDesignProject ****
+make all 
+make: Nothing to be done for `all'.
+11:47:52 **** Incremental Build of configuration Debug for project SeniorDesignProject ****
+make all 
+make: Nothing to be done for `all'.
+11:49:26 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 220976	   1484	  15612	 238072	  3a1f8	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+11:49:35 **** Incremental Build of configuration Debug for project SeniorDesignProject ****
+make all 
+make: Nothing to be done for `all'.
+11:50:18 **** Incremental Build of configuration Debug for project SeniorDesignProject ****
+make all 
+make: Nothing to be done for `all'.
+20:01:46 **** Incremental Build of configuration Debug for project SeniorDesignProject ****
+make all 
+make: Nothing to be done for `all'.
+20:05:01 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 221008	   1484	  15612	 238104	  3a218	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+20:05:09 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 221536	   1484	  15612	 238632	  3a428	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+20:05:29 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 221020	   1484	  15608	 238112	  3a220	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+20:06:00 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'float scoreOffTarget(u8*, u8*)':
+../src/main.cc:244:25: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
+   printf("d = %d\r\n", d);
+                         ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 221084	   1484	  15608	 238176	  3a260	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+20:06:08 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 221084	   1484	  15608	 238176	  3a260	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+20:06:22 **** Incremental Build of configuration Debug for project SeniorDesignProject ****
+make all 
+make: Nothing to be done for `all'.
+20:07:12 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 221104	   1484	  15612	 238200	  3a278	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+20:08:08 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 221300	   1484	  15608	 238392	  3a338	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+20:08:16 **** Incremental Build of configuration Debug for project SeniorDesignProject ****
+make all 
+make: Nothing to be done for `all'.
+20:09:11 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 221368	   1484	  15612	 238464	  3a380	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+20:09:21 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 221348	   1484	  15608	 238440	  3a368	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+20:09:28 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 221376	   1484	  15612	 238472	  3a388	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+20:09:36 **** Incremental Build of configuration Debug for project SeniorDesignProject ****
+make all 
+make: Nothing to be done for `all'.
+20:13:01 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 221380	   1484	  15608	 238472	  3a388	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+20:13:09 **** Incremental Build of configuration Debug for project SeniorDesignProject ****
+make all 
+make: Nothing to be done for `all'.
+20:14:03 **** Incremental Build of configuration Debug for project SeniorDesignProject ****
+make all 
+make: Nothing to be done for `all'.
+20:14:43 **** Incremental Build of configuration Debug for project SeniorDesignProject ****
+make all 
+make: Nothing to be done for `all'.
+20:21:04 **** Incremental Build of configuration Debug for project SeniorDesignProject ****
+make all 
+make: Nothing to be done for `all'.
+20:22:54 **** Incremental Build of configuration Debug for project SeniorDesignProject ****
+make all 
+make: Nothing to be done for `all'.
+20:23:53 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 221340	   1484	  15608	 238432	  3a360	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+20:24:38 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 221232	   1484	  15612	 238328	  3a2f8	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+20:24:53 **** Incremental Build of configuration Debug for project SeniorDesignProject ****
+make all 
+make: Nothing to be done for `all'.
+20:26:46 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 221316	   1484	  15608	 238408	  3a348	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+20:27:03 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 221416	   1484	  15612	 238512	  3a3b0	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+20:27:11 **** Incremental Build of configuration Debug for project SeniorDesignProject ****
+make all 
+make: Nothing to be done for `all'.
+20:35:41 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 221412	   1484	  15608	 238504	  3a3a8	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+20:38:27 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 220864	   1484	  15612	 237960	  3a188	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+20:38:40 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 220864	   1484	  15612	 237960	  3a188	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+20:39:19 **** Incremental Build of configuration Debug for project SeniorDesignProject ****
+make all 
+make: Nothing to be done for `all'.
+20:40:45 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:146:10: warning: unused variable 'scoreSum' [-Wunused-variable]
+    float scoreSum = 0;
+          ^~~~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 220872	   1484	  15612	 237968	  3a190	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+20:40:54 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 220896	   1484	  15612	 237992	  3a1a8	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+20:41:18 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:177:10: warning: unused variable 'guideScore' [-Wunused-variable]
+    float guideScore = 100.0f/(100 + scoreSum);
+          ^~~~~~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 220948	   1484	  15608	 238040	  3a1d8	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+20:42:01 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 221048	   1484	  15612	 238144	  3a240	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+20:42:47 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:181:34: error: 'guidesCore' was not declared in this scope
+    currFile.fsputc((char)(((int)(guidesCore * 10) % 10) + 48));
+                                  ^~~~~~~~~~
+make: *** [src/main.o] Error 1
+20:42:53 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:181:34: error: 'guidesCore' was not declared in this scope
+    currFile.fsputc((char)(((int)(guidesCore * 10) % 10) + 48));
+                                  ^~~~~~~~~~
+make: *** [src/main.o] Error 1
+20:43:12 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 221368	   1484	  15612	 238464	  3a380	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+20:43:20 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 221412	   1484	  15608	 238504	  3a3a8	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+20:43:58 **** Incremental Build of configuration Debug for project SeniorDesignProject ****
+make all 
+make: Nothing to be done for `all'.
+20:46:55 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:182:23: error: invalid conversion from 'const char*' to 'char' [-fpermissive]
+    currFile.fsputc(".");
+                       ^
+In file included from ../../SeniorDesignProject_bsp/microblaze_0/include/DXSPISDVOL.h:50:0,
+                 from ../../SeniorDesignProject_bsp/microblaze_0/include/PmodSD.h:1,
+                 from ../src/main.cc:8:
+../../SeniorDesignProject_bsp/microblaze_0/include/DFATFS.h:144:9: note:   initializing argument 1 of 'int DFILE::fsputc(char)'
+     int fsputc (char c);                          /* Put a character to the file */
+         ^~~~~~
+make: *** [src/main.o] Error 1
+20:47:12 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:182:23: error: invalid conversion from 'const char*' to 'char' [-fpermissive]
+    currFile.fsputc(".");
+                       ^
+In file included from ../../SeniorDesignProject_bsp/microblaze_0/include/DXSPISDVOL.h:50:0,
+                 from ../../SeniorDesignProject_bsp/microblaze_0/include/PmodSD.h:1,
+                 from ../src/main.cc:8:
+../../SeniorDesignProject_bsp/microblaze_0/include/DFATFS.h:144:9: note:   initializing argument 1 of 'int DFILE::fsputc(char)'
+     int fsputc (char c);                          /* Put a character to the file */
+         ^~~~~~
+make: *** [src/main.o] Error 1
+20:48:32 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:183:23: error: invalid conversion from 'const char*' to 'char' [-fpermissive]
+    currFile.fsputc(".");
+                       ^
+In file included from ../../SeniorDesignProject_bsp/microblaze_0/include/DXSPISDVOL.h:50:0,
+                 from ../../SeniorDesignProject_bsp/microblaze_0/include/PmodSD.h:1,
+                 from ../src/main.cc:8:
+../../SeniorDesignProject_bsp/microblaze_0/include/DFATFS.h:144:9: note:   initializing argument 1 of 'int DFILE::fsputc(char)'
+     int fsputc (char c);                          /* Put a character to the file */
+         ^~~~~~
+make: *** [src/main.o] Error 1
+20:48:40 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 221564	   1484	  15608	 238656	  3a440	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+20:48:54 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 221668	   1484	  15608	 238760	  3a4a8	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '
+20:49:13 **** Incremental Build of configuration Debug for project SeniorDesignProject ****
+make all 
+make: Nothing to be done for `all'.
+20:49:46 **** Incremental Build of configuration Debug for project SeniorDesignProject ****
+make all 
+make: Nothing to be done for `all'.
+20:53:15 **** Auto Build of configuration Debug for project SeniorDesignProject ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SeniorDesignProject_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: SeniorDesignProject.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../SeniorDesignProject_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SeniorDesignProject.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: SeniorDesignProject.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SeniorDesignProject.elf  |tee "SeniorDesignProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 221692	   1484	  15608	 238784	  3a4c0	SeniorDesignProject.elf
+'Finished building: SeniorDesignProject.elf.size'
+' '

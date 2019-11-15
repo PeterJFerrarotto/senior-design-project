@@ -1,0 +1,21 @@
+11:06:03 **** Build of configuration Debug for project linkerTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../linkerTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: linkerTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../linkerTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "linkerTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: linkerTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size linkerTest.elf  |tee "linkerTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1988	    268	   3112	   5368	   14f8	linkerTest.elf
+'Finished building: linkerTest.elf.size'
+' '
+
+11:06:08 Build Finished (took 4s.852ms)
+

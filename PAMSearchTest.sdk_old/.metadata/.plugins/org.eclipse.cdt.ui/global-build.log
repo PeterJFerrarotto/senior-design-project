@@ -1,0 +1,1839 @@
+11:34:51 **** Incremental Build of configuration Debug for project PamSearchTest ****
+make all 
+make: Nothing to be done for `all'.
+08:45:57 **** Incremental Build of configuration Debug for project PamSearchTest ****
+make all 
+make: Nothing to be done for `all'.
+08:48:15 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211412	   1484	   9464	 222360	  36498	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+08:48:21 **** Incremental Build of configuration Debug for project PamSearchTest ****
+make all 
+make: Nothing to be done for `all'.
+08:49:06 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211440	   1484	   9468	 222392	  364b8	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+08:50:45 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211492	   1484	   9464	 222440	  364e8	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+08:50:57 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:69:44: error: empty character constant
+    guideTotalString[guideCount * 34 + 1] = '';
+                                            ^~
+make: *** [src/main.o] Error 1
+08:51:42 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211596	   1484	   9464	 222544	  36550	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+08:53:11 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211700	   1484	   9464	 222648	  365b8	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+08:53:34 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211704	   1484	   9468	 222656	  365c0	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+08:53:56 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211496	   1484	   9468	 222448	  364f0	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+08:54:00 **** Incremental Build of configuration Debug for project PamSearchTest ****
+make all 
+make: Nothing to be done for `all'.
+08:55:42 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211448	   1484	   9468	 222400	  364c0	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+08:55:52 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211444	   1484	   9464	 222392	  364b8	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+08:55:58 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211444	   1484	   9464	 222392	  364b8	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+08:56:06 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211444	   1484	   9464	 222392	  364b8	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+08:56:37 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211444	   1484	   9464	 222392	  364b8	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+08:56:42 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211444	   1484	   9464	 222392	  364b8	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+08:56:48 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211444	   1484	   9464	 222392	  364b8	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+08:57:01 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211444	   1484	   9464	 222392	  364b8	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+08:57:56 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void WriteGuideToSD(u8*)':
+../src/main.cc:137:30: error: 'guideNum' was not declared in this scope
+   fr = file.fswrite(guide, ((guideNum + 1) * 34) + 1, &bytesWritten);
+                              ^~~~~~~~
+make: *** [src/main.o] Error 1
+08:57:59 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void WriteGuideToSD(u8*)':
+../src/main.cc:137:30: error: 'guideNum' was not declared in this scope
+   fr = file.fswrite(guide, ((guideNum + 1) * 34) + 1, &bytesWritten);
+                              ^~~~~~~~
+make: *** [src/main.o] Error 1
+08:58:26 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void WriteGuideToSD(u8*, unsigned int)':
+../src/main.cc:137:30: error: 'guideNum' was not declared in this scope
+   fr = file.fswrite(guide, ((guideNum + 1) * 34) + 1, &bytesWritten);
+                              ^~~~~~~~
+make: *** [src/main.o] Error 1
+08:58:29 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+./src/main.o: In function `main':
+D:\SeniorDesign2\PAMSearchTest\PAMSearchTest.sdk\PamSearchTest\Debug/../src/main.cc:150: undefined reference to `WriteGuideToSD(unsigned char*)'
+collect2.exe: error: ld returned 1 exit status
+make: *** [PamSearchTest.elf] Error 1
+08:58:40 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:78:33: error: too few arguments to function 'void WriteGuideToSD(u8*, unsigned int)'
+  WriteGuideToSD(guideTotalString);
+                                 ^
+../src/main.cc:16:6: note: declared here
+ void WriteGuideToSD(u8* guide, unsigned guideCount);
+      ^~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+08:58:49 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211444	   1484	   9464	 222392	  364b8	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+08:58:55 **** Incremental Build of configuration Debug for project PamSearchTest ****
+make all 
+make: Nothing to be done for `all'.
+09:01:10 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211484	   1484	   9464	 222432	  364e0	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:01:18 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211504	   1484	   9468	 222456	  364f8	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:01:22 **** Incremental Build of configuration Debug for project PamSearchTest ****
+make all 
+make: Nothing to be done for `all'.
+09:01:31 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211480	   1484	   9468	 222432	  364e0	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:01:44 **** Incremental Build of configuration Debug for project PamSearchTest ****
+make all 
+make: Nothing to be done for `all'.
+09:02:35 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211480	   1484	   9468	 222432	  364e0	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:02:39 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211480	   1484	   9468	 222432	  364e0	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:02:57 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211476	   1484	   9464	 222424	  364d8	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:03:02 **** Incremental Build of configuration Debug for project PamSearchTest ****
+make all 
+make: Nothing to be done for `all'.
+09:04:32 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211476	   1484	   9464	 222424	  364d8	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:04:46 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211480	   1484	   9468	 222432	  364e0	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:05:04 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211412	   1484	   9464	 222360	  36498	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:05:08 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 208080	   1484	   9468	 219032	  35798	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:05:12 **** Incremental Build of configuration Debug for project PamSearchTest ****
+make all 
+make: Nothing to be done for `all'.
+09:06:08 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 208076	   1484	   9464	 219024	  35790	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:06:13 **** Incremental Build of configuration Debug for project PamSearchTest ****
+make all 
+make: Nothing to be done for `all'.
+09:07:47 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 208076	   1484	   9464	 219024	  35790	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:07:57 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 208096	   1484	   9468	 219048	  357a8	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:08:02 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 208096	   1484	   9468	 219048	  357a8	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:08:05 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 208096	   1484	   9468	 219048	  357a8	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:08:08 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 208096	   1484	   9468	 219048	  357a8	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:08:17 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 208096	   1484	   9468	 219048	  357a8	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:08:39 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 208092	   1484	   9464	 219040	  357a0	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:08:43 **** Incremental Build of configuration Debug for project PamSearchTest ****
+make all 
+make: Nothing to be done for `all'.
+09:09:35 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 208088	   1484	   9468	 219040	  357a0	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:09:46 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 208084	   1484	   9464	 219032	  35798	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:11:12 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 208072	   1484	   9468	 219024	  35790	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:11:18 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 208072	   1484	   9468	 219024	  35790	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:11:38 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211404	   1484	   9464	 222352	  36490	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:11:42 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211404	   1484	   9464	 222352	  36490	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:11:53 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211448	   1484	   9468	 222400	  364c0	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:12:11 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211452	   1484	   9464	 222400	  364c0	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:12:24 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211404	   1484	   9464	 222352	  36490	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:12:27 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211400	   1484	   9468	 222352	  36490	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:12:34 **** Incremental Build of configuration Debug for project PamSearchTest ****
+make all 
+make: Nothing to be done for `all'.
+09:13:43 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211396	   1484	   9464	 222344	  36488	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:14:12 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211384	   1484	   9468	 222336	  36480	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:14:22 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211384	   1484	   9468	 222336	  36480	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:15:05 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:75:36: error: 'guideTotalString' cannot be used as a function
+    guideTotalString(guideCount * 29) = '\0';
+                                    ^
+make: *** [src/main.o] Error 1
+09:15:15 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211444	   1484	   9464	 222392	  364b8	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:15:26 **** Incremental Build of configuration Debug for project PamSearchTest ****
+make all 
+make: Nothing to be done for `all'.
+09:17:55 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211444	   1484	   9464	 222392	  364b8	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:18:32 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211444	   1484	   9464	 222392	  364b8	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:18:39 **** Incremental Build of configuration Debug for project PamSearchTest ****
+make all 
+make: Nothing to be done for `all'.
+09:19:19 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211456	   1484	   9468	 222408	  364c8	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:19:24 **** Incremental Build of configuration Debug for project PamSearchTest ****
+make all 
+make: Nothing to be done for `all'.
+09:19:38 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211456	   1484	   9468	 222408	  364c8	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:19:42 **** Incremental Build of configuration Debug for project PamSearchTest ****
+make all 
+make: Nothing to be done for `all'.
+09:21:03 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211456	   1484	   9468	 222408	  364c8	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:21:08 **** Incremental Build of configuration Debug for project PamSearchTest ****
+make all 
+make: Nothing to be done for `all'.
+09:21:34 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211452	   1484	   9464	 222400	  364c0	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:24:07 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211456	   1484	   9468	 222408	  364c8	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:24:22 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211456	   1484	   9468	 222408	  364c8	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:24:27 **** Incremental Build of configuration Debug for project PamSearchTest ****
+make all 
+make: Nothing to be done for `all'.
+09:26:01 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211496	   1484	   9468	 222448	  364f0	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:26:20 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211496	   1484	   9468	 222448	  364f0	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:26:43 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211492	   1484	   9464	 222440	  364e8	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:26:47 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211492	   1484	   9464	 222440	  364e8	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:26:50 **** Incremental Build of configuration Debug for project PamSearchTest ****
+make all 
+make: Nothing to be done for `all'.
+09:26:56 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211452	   1484	   9464	 222400	  364c0	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:27:01 **** Incremental Build of configuration Debug for project PamSearchTest ****
+make all 
+make: Nothing to be done for `all'.
+09:27:45 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211452	   1484	   9464	 222400	  364c0	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:27:49 **** Incremental Build of configuration Debug for project PamSearchTest ****
+make all 
+make: Nothing to be done for `all'.
+09:28:42 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211480	   1484	   9468	 222432	  364e0	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:28:46 **** Incremental Build of configuration Debug for project PamSearchTest ****
+make all 
+make: Nothing to be done for `all'.
+09:29:00 **** Incremental Build of configuration Debug for project PamSearchTest ****
+make all 
+make: Nothing to be done for `all'.
+09:31:43 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211868	   1484	   9464	 222816	  36660	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:33:02 **** Incremental Build of configuration Debug for project PamSearchTest ****
+make all 
+make: Nothing to be done for `all'.
+09:34:24 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211868	   1484	   9464	 222816	  36660	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:34:32 **** Incremental Build of configuration Debug for project PamSearchTest ****
+make all 
+make: Nothing to be done for `all'.
+09:35:09 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211868	   1484	   9464	 222816	  36660	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:35:14 **** Incremental Build of configuration Debug for project PamSearchTest ****
+make all 
+make: Nothing to be done for `all'.
+09:36:49 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'bool ExtractGuide(int, unsigned int, u8*, u8*)':
+../src/main.cc:117:16: error: expected unqualified-id before '=' token
+  unsigned long = charIndex / 4;
+                ^
+make: *** [src/main.o] Error 1
+09:37:04 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'bool ExtractGuide(int, unsigned int, u8*, u8*)':
+../src/main.cc:117:16: warning: unused variable 'pval' [-Wunused-variable]
+  unsigned long pval = charIndex / 4;
+                ^~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211888	   1484	   9468	 222840	  36678	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:37:07 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'bool ExtractGuide(int, unsigned int, u8*, u8*)':
+../src/main.cc:117:16: warning: unused variable 'val' [-Wunused-variable]
+  unsigned long val = charIndex / 4;
+                ^~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211888	   1484	   9468	 222840	  36678	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:37:26 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211868	   1484	   9464	 222816	  36660	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:37:31 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211864	   1484	   9468	 222816	  36660	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:37:37 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211856	   1484	   9468	 222808	  36658	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:38:23 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211856	   1484	   9468	 222808	  36658	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:38:27 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211856	   1484	   9468	 222808	  36658	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:38:50 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211856	   1484	   9468	 222808	  36658	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:38:53 **** Incremental Build of configuration Debug for project PamSearchTest ****
+make all 
+make: Nothing to be done for `all'.
+09:40:17 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211468	   1484	   9464	 222416	  364d0	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:40:30 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211468	   1484	   9464	 222416	  364d0	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:40:34 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void WriteGuideToSD(u8*, unsigned int)':
+../src/main.cc:155:47: warning: left operand of comma operator has no effect [-Wunused-value]
+   fr = file.fswrite(guide, ((guideCount * 28) + 1, &bytesWritten);
+                             ~~~~~~~~~~~~~~~~~~^~~
+../src/main.cc:155:66: error: expected ')' before ';' token
+   fr = file.fswrite(guide, ((guideCount * 28) + 1, &bytesWritten);
+                                                                  ^
+make: *** [src/main.o] Error 1
+09:40:36 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211464	   1484	   9468	 222416	  364d0	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:41:31 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211532	   1484	   9464	 222480	  36510	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:41:36 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211532	   1484	   9464	 222480	  36510	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:41:39 **** Incremental Build of configuration Debug for project PamSearchTest ****
+make all 
+make: Nothing to be done for `all'.
+09:42:47 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211592	   1484	   9468	 222544	  36550	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:42:51 **** Incremental Build of configuration Debug for project PamSearchTest ****
+make all 
+make: Nothing to be done for `all'.
+09:43:13 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211592	   1484	   9468	 222544	  36550	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:43:35 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211588	   1484	   9464	 222536	  36548	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:43:42 **** Incremental Build of configuration Debug for project PamSearchTest ****
+make all 
+make: Nothing to be done for `all'.
+09:45:10 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:65:5: error: 'guideTotalString' was not declared in this scope
+     guideTotalString = (u8*)realloc(guideTotalString, ((guideCount + 1) * 28) + 1);
+     ^~~~~~~~~~~~~~~~
+../src/main.cc:92:19: error: 'guideTotalString' was not declared in this scope
+  xil_printf("%s", guideTotalString);
+                   ^~~~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+09:45:31 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 207760	   1484	   9468	 218712	  35658	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:46:09 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 207760	   1484	   9468	 218712	  35658	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:47:38 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 207752	   1484	   9468	 218704	  35650	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:52:14 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 207752	   1484	   9468	 218704	  35650	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:52:53 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 207752	   1484	   9468	 218704	  35650	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:53:14 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211236	   1484	   9464	 222184	  363e8	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+09:53:21 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211236	   1484	   9464	 222184	  363e8	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+10:01:43 **** Incremental Build of configuration Debug for project PamSearchTest ****
+make all 
+make: Nothing to be done for `all'.
+10:02:35 **** Auto Build of configuration Debug for project PamSearchTest ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../PamSearchTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: PamSearchTest.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../PamSearchTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PamSearchTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: PamSearchTest.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PamSearchTest.elf  |tee "PamSearchTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 211272	   1484	   9468	 222224	  36410	PamSearchTest.elf
+'Finished building: PamSearchTest.elf.size'
+' '
+10:02:41 **** Incremental Build of configuration Debug for project PamSearchTest ****
+make all 
+make: Nothing to be done for `all'.
+10:03:11 **** Incremental Build of configuration Debug for project PamSearchTest ****
+make all 
+make: Nothing to be done for `all'.

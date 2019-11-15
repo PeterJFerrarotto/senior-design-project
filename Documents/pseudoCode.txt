@@ -1,0 +1,10 @@
+
+
+Hardware Level:
+
+	compareBasePair(input [bp1, bp2], output [match, exactMatch])
+		exactMatch = bp == bp2
+		match = "or" each bit from a bitwise "and" of bp1 and bp2
+		
+
+	findPAM ( input [largeSequence, 

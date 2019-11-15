@@ -1,0 +1,84 @@
+/*
+
+Vivado v2017.2 (64-bit)
+SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+
+Process ID: 6428
+License: Customer
+
+Current time: 	3/14/18 7:38:15 PM EDT
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1368x912
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 24 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.2/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin/java.exe
+Java library paths: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o;C:/WINDOWS/Sun/Java/bin;C:/WINDOWS/system32;C:/WINDOWS;C:/Xilinx/Vivado/2017.2/bin;C:/Xilinx/Vivado/2017.2/lib/win64.o;C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin/server;C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin;C:/Xilinx/SDK/2017.2/bin;C:/Xilinx/Vivado/2017.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2017.2/ids_lite/ISE/lib/nt64;C:/Xilinx/Vivado_HLS/2017.2/bin;C:/Program Files/ImageMagick-7.0.4-Q16;C:/WINDOWS/system32;C:/WINDOWS;C:/WINDOWS/System32/Wbem;C:/WINDOWS/System32/WindowsPowerShell/v1.0/;C:/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/;C:/Program Files (x86)/PharosSystems/Core;C:/Program Files (x86)/GtkSharp/2.12/bin;C:/curl;C:/Program Files (x86)/PuTTY/;C:/Program Files/Git/cmd;C:/Program Files/Amazon/AWSCLI/;C:/Program Files/nodejs/;C:/Users/peter/AppData/Local/Programs/Python/Python36-32/Scripts/;C:/Users/peter/AppData/Local/Programs/Python/Python36-32/;C:/Users/peter/AppData/Local/Microsoft/WindowsApps;C:/Users/peter/AppData/Roaming/npm;;C:/Xilinx/Vivado/2017.2/tps/mingw/6.2.0/win64.o/nt/bin;C:/Xilinx/Vivado/2017.2/tps/mingw/6.2.0/win64.o/nt/libexec/gcc/x86_64-w64-mingw32/6.2.0;.
+
+User name: 	peter
+User home directory: C:/Users/peter
+User working directory: D:/SeniorDesign2/ip_repo
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.2
+RDI_DATADIR: C:/Xilinx/Vivado/2017.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.2/bin
+
+User preferences location: C:/Users/peter/AppData/Roaming/Xilinx/Vivado
+Vivado preferences directory: C:/Users/peter/AppData/Roaming/Xilinx/Vivado/2017.2/vivado.xml
+Vivado layouts directory: C:/Users/peter/AppData/Roaming/Xilinx/Vivado/2017.2/layouts
+PlanAhead jar location: 	C:/Xilinx/Vivado/2017.2/lib/classes/planAhead.jar
+Vivado Look & Feel: 	[Synthetica - the extended Synth Look and Feel. - ui.g.i.H]
+Engine tmp dir: 	D:/SeniorDesign2/ip_repo/.Xil/Vivado-6428-DESKTOP-T6I7S0P
+
+GUI allocated memory:	171 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 575 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 58 MB (+58865kb) [00:00:15]
+// [Engine Memory]: 547 MB (+421952kb) [00:00:15]
+// bs:g (cg:JFrame):  Open Project : addNotify
+// Opening Vivado Project: D:\SeniorDesign2\ip_repo\edit_offTargetSearcher_v1_0.xpr. Version: Vivado v2017.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project D:/SeniorDesign2/ip_repo/edit_offTargetSearcher_v1_0.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project D:/SeniorDesign2/ip_repo/edit_offTargetSearcher_v1_0.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/SeniorDesign2/ip_repo'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 575 MB. GUI used memory: 34 MB. Current time: 3/14/18 7:38:17 PM EDT
+// [Engine Memory]: 575 MB (+900kb) [00:00:20]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// Project name: edit_offTargetSearcher_v1_0; location: D:/SeniorDesign2/ip_repo; part: xc7a100tcsg324-1
+// [Engine Memory]: 608 MB (+4695kb) [00:00:33]
+// Tcl Message: open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:18 . Memory (MB): peak = 773.000 ; gain = 10.590 
+dismissDialog("Open Project"); // bs:g (cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [GUI Memory]: 63 MB (+1229kb) [00:00:35]
+// TclEventType: DG_GRAPH_GENERATED
+closeMainWindow("edit_offTargetSearcher_v1_0 - [D:/SeniorDesign2/ip_repo/edit_offTargetSearcher_v1_0.xpr] - Vivado 2017.2"); // cg:JFrame
+// HOptionPane Warning: 'A background task is running. Please wait until it completes to exit vivado. If you choose to abort background task and exit immediately, you will lose all unsaved changes to project. (Background Task)'
+// Tcl Message: update_compile_order -fileset sources_1 

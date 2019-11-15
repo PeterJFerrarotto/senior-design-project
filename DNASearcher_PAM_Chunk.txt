@@ -1,0 +1,101 @@
+`timescale 1ns / 1ps
+
+module PAMSearcher #(
+    parameter BIG_SEQ_SIZE = 32,
+    parameter OUTER_LOCATION_NUM_SIZE = 5,
+    parameter PAM_SEQUENCE = 8'b00100010, //PAM Sequence - binary of GG
+    parameter   IDLE = 7'b0000001,
+                INPUT = 7'b0000010,
+                START_SEARCH = 7'b0000100,
+                SEARCH = 7'b0001000,
+                COMPLETE = 7'b1000000
+)
+(
+    input CLK,
+    input RST,
+    input START,
+    
+    input [BIG_SEQ_SIZE - 1 : 0] bigSeq,
+    input [OUTER_LOCATION_NUM_SIZE - 1 : 0] startIndex,
+    
+    output reg [6 : 0] currState,
+    output reg [OUTER_LOCATION_NUM_SIZE - 1 : 0] location,
+    output reg found,
+    output reg DONE
+
+    );
+
+                
+    reg [OUTER_LOCATION_NUM_SIZE - 1 : 0] indexStart;
+    reg [OUTER_LOCATION_NUM_SIZE - 1 : 0] pos;
+    reg [BIG_SEQ_SIZE-1 : 0] seqBig;
+    reg [6 : 0] state;
+    
+    reg matchFound;
+    
+    reg [7 : 0] outerChunk;
+    
+    always @ (*)
+    begin
+        currState <= state;
+        location <= pos;
+        found <= matchFound;
+    end
+    
+    always @ (posedge CLK) 
+    begin
+        if (RST == 1'b0) begin
+            pos <= 0;
+            DONE <= 1'b0;
+            state <= IDLE;
+            matchFound <= 1'b0;
+        end else begin
+            case (state)
+                IDLE : begin
+                        pos <= 0;
+                        DONE <= 1'b0;
+                        matchFound <= 1'b0;
+                        if (START == 1'b1) begin
+                            state <= INPUT;
+                        end
+                    end
+                INPUT : begin
+                        DONE <= 1'b0;
+                        matchFound <= 1'b0;
+                        indexStart <=  startIndex;
+                        seqBig <= bigSeq;
+                        pos <= startIndex;
+                        state <= START_SEARCH;
+                    end
+                START_SEARCH : begin
+                        DONE <= 1'b0;
+                        matchFound <= 1'b0;
+                        if (pos >= 7) begin
+                            outerChunk <= {seqBig[pos], seqBig[pos-1], seqBig[pos-2], seqBig[pos-3], seqBig[pos-4], seqBig[pos-5], seqBig[pos-6], seqBig[pos-7]};
+                            state <= SEARCH;
+                        end else begin
+                            state <= COMPLETE;
+                        end
+                    end
+                SEARCH : begin
+                        DONE <= 1'b0;
+                        if (outerChunk == PAM_SEQUENCE) begin
+                            matchFound <= 1'b1;
+                            state <= COMPLETE;
+                        end else begin
+                            matchFound <= 1'b0;
+                            pos <= pos - 4;
+                            state <= START_SEARCH;
+                        end
+                    end
+                COMPLETE : begin
+                        DONE <= #1 1'b1;
+//                        if (START == 1'b1) begin
+//                            state <= INPUT;
+//                        end
+                    end
+                default : state <= #1 IDLE;
+            endcase
+        end
+    end
+endmodule

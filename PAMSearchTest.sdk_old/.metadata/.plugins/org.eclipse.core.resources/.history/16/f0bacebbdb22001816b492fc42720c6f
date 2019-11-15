@@ -1,0 +1,333 @@
+//AXI GPIO driver
+#include "xgpio.h"
+//send data over UART
+#include "xil_printf.h"
+#include "xil_types.h"
+//information about AXI peripherals
+#include "xparameters.h"
+#include "PmodSD.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+void ReadBigSequence(u8 seq[501]);
+
+bool ExtractGuide(int index, unsigned count, u8 seq[501], u8 guide[29]);
+
+void WriteGuideToSD(u8* guide, unsigned guideCount);
+
+void WriteBigSequence(unsigned long bigSeq, unsigned offset);
+
+unsigned TranslateNucleotide(u8 nucleotide);
+
+unsigned long TranslateSequence(u8* sequence, unsigned offset);
+
+int searchDNA(unsigned long startIndex);
+
+int main()
+{
+//	XGpio gpio;
+//	u32 btn, led;
+//
+//	XGpio_Initialize(&gpio, 0);
+//
+//	XGpio_SetDataDirection(&gpio, 2, 0x00000000); // set LED GPIO channel tristates to All Output
+//	XGpio_SetDataDirection(&gpio, 1, 0xFFFFFFFF); // set BTN GPIO channel tristates to All Input
+
+	Xil_Out32(XPAR_PAMCHUNKSEARCH_0_S00_AXI_BASEADDR + 64 * 4, 0x1);
+	unsigned doneFoundLocationStream = Xil_In32(XPAR_PAMCHUNKSEARCH_0_S00_AXI_BASEADDR + 260);
+	printf("Found, Done, Location: 0x%08x\r\n", doneFoundLocationStream);
+
+	u8 seq[501];
+	ReadBigSequence(seq);
+	unsigned guideCount = 0;
+	int pos = 1999 - (21 * 4);
+	int nextPos = pos;
+	unsigned offset = 0;
+	do
+	{
+		unsigned long translatedBigSeq = TranslateSequence(seq, offset * 8);
+		WriteBigSequence(translatedBigSeq, offset);
+		offset++;
+	} while (offset <= 62);
+
+	u8 guide[29];
+
+	u8* guideTotalString = (u8*)malloc(1);
+	guideTotalString[0] = '\0';
+	bool viableGuide = false;
+	do
+	{
+		pos = searchDNA(nextPos);
+		xil_printf("Position: %d\r\n", pos);
+		nextPos = pos - 8;
+		viableGuide = ExtractGuide(pos, guideCount, seq, guide);
+		//xil_printf("%s\r\n", guide);
+		if (viableGuide)
+		{
+			guideTotalString = (u8*)realloc(guideTotalString, ((guideCount + 1) * 29) + 1);
+			for (unsigned i = (guideCount * 29), j=0; i < (guideCount * 29) + 29; i++,j++)
+			{
+				guideTotalString[i] = guide[j];
+				xil_printf("%c", guide[j]);
+			}
+			xil_printf("\r\n");
+			guideCount++;
+			guideTotalString[guideCount * 29] = 0;
+		}
+	} while (pos != -1);
+
+	WriteGuideToSD(guideTotalString, guideCount);
+	while (1){}
+}
+
+void WriteBigSequence(unsigned long bigSeq, unsigned offset)
+{
+	Xil_Out32(XPAR_PAMCHUNKSEARCH_0_S00_AXI_BASEADDR + offset * 4, bigSeq);
+}
+
+bool ExtractGuide(int index, unsigned count, u8 seq[501], u8 guide[29])
+{
+	if (index == -1)
+	{
+		return false;
+	}
+	unsigned long charIndex = 500 - ((index + 1) / 4);
+	if (seq[charIndex - 1] == 'G')
+	{
+		return false;
+	}
+	charIndex = charIndex - 21;
+
+	guide[0] = (((count + 1) / 100) % 10) + 48;
+	guide[1] = (((count + 1)/ 10) % 10 ) + 48;
+	guide[2] = ((count + 1) % 10) + 48;
+	guide[3] = ':';
+	guide[4] = ' ';
+	for (int i = 0; i < 23; i++)
+	{
+		guide[i + 5] = seq[charIndex + i];
+	}
+	guide[28] = '\0';
+	printf("%s\r\n", guide);
+	return true;
+}
+
+void WriteGuideToSD(u8* guide, unsigned guideCount)
+{
+	DXSPISDVOL disk(XPAR_PMODSD_0_AXI_LITE_SPI_BASEADDR, XPAR_PMODSD_0_AXI_LITE_SDCS_BASEADDR);
+	DFILE file;
+
+	// the drive to mount the SD volume to.
+	// options are: "0:", "1:", "2:", "3:", "4:"
+	static const char szDriveNbr[] = "0:";
+
+	FRESULT fr;
+	u32 bytesWritten=0;
+
+	xil_printf("PmodSD Demo Launched\r\n");
+	//Mount the disk
+	DFATFS::fsmount(disk, szDriveNbr, 1);
+
+	xil_printf("Disk mounted\r\n");
+	char fileName[14] = "pamGuides.txt";
+
+	xil_printf("%s\r\n", fileName);
+
+	if ((fr = file.fsopen(fileName, FA_WRITE | FA_CREATE_ALWAYS)) == FR_OK) {
+		xil_printf("Opened %s\r\n", fileName);
+		fr = file.fswrite(guide, ((guideCount + 1) * 34) + 1, &bytesWritten);
+		if (fr == FR_OK)
+			xil_printf("Write successful\r\n");
+		else
+			xil_printf("Write failed\r\n");
+		fr = file.fsclose();
+		if (fr == FR_OK)
+			xil_printf("File close successful\r\n");
+		else
+			xil_printf("File close failed\r\n");
+	}
+	else
+		xil_printf("Failed to open file to write to\r\n");
+}
+
+
+int searchDNA(unsigned long startIndex)
+{
+	int pos = 0;
+	xil_printf("Start Index: %d\r\n", startIndex);
+	printf("Start index hex: 0x%3lx\r\n", startIndex);
+	//startIndex is 11 bits long:
+	//0000 0111 1111 1111
+	//   0	  7    F    F
+	//Done is at 13th bit:
+	//0000 1000 0000 0000
+	//   0    8    0    0
+	//Found is at 14th bit:
+	//0001 0000 0000 0000
+	//   1    0    0    0
+	u32 indexBin = 0;
+	indexBin += startIndex;
+	unsigned long location = 0;
+
+	unsigned done = 0, found = 0;
+
+	unsigned doneFoundLocationStream = 0;
+
+	Xil_Out32(XPAR_PAMCHUNKSEARCH_0_S00_AXI_BASEADDR + (63 * 4), indexBin);
+
+	xil_printf("Writing register values...\r\n");
+	Xil_Out32(XPAR_PAMCHUNKSEARCH_0_S00_AXI_BASEADDR + (64 * 4), 0x0);
+	xil_printf("Started searching...\r\n");
+	Xil_Out32(XPAR_PAMCHUNKSEARCH_0_S00_AXI_BASEADDR + (64 * 4), 0x1);
+	do
+	{
+		doneFoundLocationStream = Xil_In32(XPAR_PAMCHUNKSEARCH_0_S00_AXI_BASEADDR + 260);
+		printf("Found, Done, Location: 0x%08x\r\n", doneFoundLocationStream);
+		done = doneFoundLocationStream & 0x800;
+	}while (done == 0);
+
+
+	printf("DoneFoundLocation Stream: 0x%08x\r\n", doneFoundLocationStream);
+//	do
+//	{
+//		state = Xil_In32(XPAR_DNESEARCHER_SMALL_6REG_0_S00_AXI_BASEADDR + 12);
+//		printf("State: 0x%02x\r\n", state);
+//		location = Xil_In32(XPAR_DNESEARCHER_SMALL_6REG_0_S00_AXI_BASEADDR + 20);
+//		printf("Search output : 0x%08lx\r\n", location);
+//		doneFoundStream = Xil_In32(XPAR_DNESEARCHER_SMALL_6REG_0_S00_AXI_BASEADDR + 16);
+//		done = doneFoundStream & 0x2;
+//		found = doneFoundStream & 0x1;
+//	} while (done == 0);
+
+	location = Xil_In32(XPAR_PAMCHUNKSEARCH_0_S00_AXI_BASEADDR + 260) & 0x7FF;
+	pos = location;
+	printf("Search output : 0x%08lx\r\n", location);
+	found = doneFoundLocationStream & 0x1000;
+	printf("Found: 0x%08x\r\n", found);
+	if (found == 0)
+	{
+		pos = -1;
+	}
+
+	return pos;
+}
+
+void ReadBigSequence(u8 seq[501])
+{
+	DXSPISDVOL disk(XPAR_PMODSD_0_AXI_LITE_SPI_BASEADDR, XPAR_PMODSD_0_AXI_LITE_SDCS_BASEADDR);
+	DFILE file;
+
+	// the drive to mount the SD volume to.
+	// options are: "0:", "1:", "2:", "3:", "4:"
+	static const char szDriveNbr[] = "0:";
+
+	FRESULT fr;
+	u32 bytesRead, totalBytesRead;
+	u8 *seqPtr;
+
+	//Mount the disk
+	DFATFS::fsmount(disk, szDriveNbr, 1);
+
+	xil_printf("Disk mounted\r\n");
+
+	if ((fr = file.fsopen("500BP.txt", FA_READ)) == FR_OK) {
+		seqPtr = seq;
+		totalBytesRead = 0;
+		do {
+			fr = file.fsread(seqPtr, 1, &bytesRead);
+			xil_printf("%c", *seqPtr);
+			seqPtr++;
+			totalBytesRead += bytesRead;
+		} while (totalBytesRead < 500 && fr == FR_OK);
+		xil_printf("\r\n");
+		if (fr == FR_OK) {
+			xil_printf("Read successful:");
+			seq[totalBytesRead] = 0;
+
+		}
+		else
+			xil_printf("Read failed\r\n");
+	}
+	else
+		xil_printf("Failed to open file to read from\r\n");
+
+}
+
+unsigned TranslateNucleotide(u8 nucleotide)
+{
+	unsigned translated = 0x0;
+	switch (nucleotide)
+	{
+	case 'U':
+		translated = 0x0;
+		break;
+	case 'A':
+		translated = 0x1;
+		break;
+	case 'G':
+		translated = 0x2;
+		break;
+	case 'C':
+		translated = 0x4;
+		break;
+	case 'T':
+		translated = 0x8;
+		break;
+	case 'M':
+		translated = 0x5;
+		break;
+	case 'R':
+		translated = 0x3;
+		break;
+	case 'W':
+		translated = 0x9;
+		break;
+	case 'S':
+		translated = 0x6;
+		break;
+	case 'Y':
+		translated = 0xc;
+		break;
+	case 'K':
+		translated = 0xa;
+		break;
+	case 'V':
+		translated = 0x7;
+		break;
+	case 'H':
+		translated = 0xd;
+		break;
+	case 'D':
+		translated = 0xb;
+		break;
+	case 'B':
+		translated = 0xe;
+		break;
+	default:
+		translated = 0xF;
+		break;
+	}
+	return translated;
+}
+
+unsigned long TranslateSequence(u8* sequence, unsigned offset)
+{
+	unsigned i = offset;
+	u8 nucleotide = sequence[i];
+	unsigned long translatedSequence;
+	translatedSequence = TranslateNucleotide(nucleotide) & 0xF;
+	do
+	{
+		i++;
+		nucleotide = sequence[i];
+		if (nucleotide == '\0')
+			break;
+//		xil_printf("%c\n", nucleotide);
+		translatedSequence = translatedSequence << 4;
+//		printf("0x%08x\n", translatedSequence);
+		translatedSequence = translatedSequence | (TranslateNucleotide(nucleotide) & 0xF);
+//		xil_printf("%u\n", TranslateNucleotide(nucleotide) & 0xF);
+	}
+	while (nucleotide != '\0' && i < offset + 7);
+	return translatedSequence;
+}

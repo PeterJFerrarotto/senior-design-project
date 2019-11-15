@@ -1,0 +1,13 @@
+com.xilinx.sdk.linkgen.prefs.SeniorDesignProject\:.bss=mig_7series_0_memaddr
+com.xilinx.sdk.linkgen.prefs.SeniorDesignProject\:.data=mig_7series_0_memaddr
+com.xilinx.sdk.linkgen.prefs.SeniorDesignProject\:.rodata=mig_7series_0_memaddr
+com.xilinx.sdk.linkgen.prefs.SeniorDesignProject\:.sbss=mig_7series_0_memaddr
+com.xilinx.sdk.linkgen.prefs.SeniorDesignProject\:.sbss2=mig_7series_0_memaddr
+com.xilinx.sdk.linkgen.prefs.SeniorDesignProject\:.sdata=mig_7series_0_memaddr
+com.xilinx.sdk.linkgen.prefs.SeniorDesignProject\:.sdata2=mig_7series_0_memaddr
+com.xilinx.sdk.linkgen.prefs.SeniorDesignProject\:.text=mig_7series_0_memaddr
+com.xilinx.sdk.linkgen.prefs.SeniorDesignProject\:heap=mig_7series_0_memaddr
+com.xilinx.sdk.linkgen.prefs.SeniorDesignProject\:heap-size=5120
+com.xilinx.sdk.linkgen.prefs.SeniorDesignProject\:stack=mig_7series_0_memaddr
+com.xilinx.sdk.linkgen.prefs.SeniorDesignProject\:stack-size=10240
+eclipse.preferences.version=1

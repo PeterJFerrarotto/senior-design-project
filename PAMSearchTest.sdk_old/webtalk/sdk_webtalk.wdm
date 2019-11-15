@@ -1,0 +1,60 @@
+version = "1.0";
+clients =
+(
+	{ client_name = "project"; 
+		rules = (
+			{
+				context="software_version_and_target_device";
+				xml_map="software_version_and_target_device";
+				html_map="software_version_and_target_device";
+				html_format="UserEnvStyle";
+			},
+			{
+				context="user_environment";
+				xml_map="user_environment";
+				html_map="user_environment";
+				html_format="UserEnvStyle";
+			}
+		);
+     },
+	{ client_name = "sdk"; 
+		rules = (
+			{
+				context="sdk\\\\hardware/1519911038000";
+				xml_map="sdk\\\\hardware/1519911038000";
+				html_map="sdk\\\\hardware/1519911038000";
+				html_format="UnisimStatsStyle";
+			},
+			{
+				context="sdk\\\\bsp/1519911070000";
+				xml_map="sdk\\\\bsp/1519911070000";
+				html_map="sdk\\\\bsp/1519911070000";
+				html_format="UnisimStatsStyle";
+			},
+			{
+				context="sdk\\\\application/1519911092000";
+				xml_map="sdk\\\\application/1519911092000";
+				html_map="sdk\\\\application/1519911092000";
+				html_format="UnisimStatsStyle";
+			},
+			{
+				context="sdk\\\\bsp/1519920224000";
+				xml_map="sdk\\\\bsp/1519920224000";
+				html_map="sdk\\\\bsp/1519920224000";
+				html_format="UnisimStatsStyle";
+			},
+			{
+				context="sdk\\\\application/1519920256000";
+				xml_map="sdk\\\\application/1519920256000";
+				html_map="sdk\\\\application/1519920256000";
+				html_format="UnisimStatsStyle";
+			},
+			{
+				context="sdk\\\\bsp/1519926107329";
+				xml_map="sdk\\\\bsp/1519926107329";
+				html_map="sdk\\\\bsp/1519926107329";
+				html_format="UnisimStatsStyle";
+			}
+		);
+     }
+);

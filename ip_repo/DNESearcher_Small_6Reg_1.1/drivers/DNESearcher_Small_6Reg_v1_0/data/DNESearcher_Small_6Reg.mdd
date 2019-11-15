@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER DNESearcher_Small_6Reg
+	OPTION supported_peripherals = (DNESearcher_Small_6Reg);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = DNESearcher_Small_6Reg;
+END DRIVER

@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER DNA_Search_SmallScale_Debug
+	OPTION supported_peripherals = (DNA_Search_SmallScale_Debug);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = DNA_Search_SmallScale_Debug;
+END DRIVER

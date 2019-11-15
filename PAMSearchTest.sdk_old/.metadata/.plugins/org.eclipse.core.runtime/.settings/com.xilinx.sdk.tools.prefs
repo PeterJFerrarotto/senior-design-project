@@ -1,0 +1,13 @@
+com.xilinx.sdk.linkgen.prefs.PamSearchTest\:.bss=mig_7series_0_memaddr
+com.xilinx.sdk.linkgen.prefs.PamSearchTest\:.data=mig_7series_0_memaddr
+com.xilinx.sdk.linkgen.prefs.PamSearchTest\:.rodata=mig_7series_0_memaddr
+com.xilinx.sdk.linkgen.prefs.PamSearchTest\:.sbss=mig_7series_0_memaddr
+com.xilinx.sdk.linkgen.prefs.PamSearchTest\:.sbss2=mig_7series_0_memaddr
+com.xilinx.sdk.linkgen.prefs.PamSearchTest\:.sdata=mig_7series_0_memaddr
+com.xilinx.sdk.linkgen.prefs.PamSearchTest\:.sdata2=mig_7series_0_memaddr
+com.xilinx.sdk.linkgen.prefs.PamSearchTest\:.text=mig_7series_0_memaddr
+com.xilinx.sdk.linkgen.prefs.PamSearchTest\:heap=mig_7series_0_memaddr
+com.xilinx.sdk.linkgen.prefs.PamSearchTest\:heap-size=1024
+com.xilinx.sdk.linkgen.prefs.PamSearchTest\:stack=mig_7series_0_memaddr
+com.xilinx.sdk.linkgen.prefs.PamSearchTest\:stack-size=8192
+eclipse.preferences.version=1

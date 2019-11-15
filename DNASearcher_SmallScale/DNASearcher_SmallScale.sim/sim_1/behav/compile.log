@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SeniorDesign2/DNASearcher_SmallScale/DNASearcher_SmallScale.srcs/sources_1/new/DNASearcher.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DNASearcher
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SeniorDesign2/DNASearcher_SmallScale/DNASearcher_SmallScale.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,0 +1,9 @@
+Unable to capture context for thread 11112 in process 12744, can not generate back trace
+Unable to capture context for thread 1264 in process 12744, can not generate back trace
+Unable to capture context for thread 2524 in process 12744, can not generate back trace
+Exception at PC 0x00007FFCB1CFBB93
+Printing stacktrace...
+
+Exception at PC 0x00007FFCB1A01A52
+Attemped to write at address 0x00007FFCACBEABA4
+Another exception occurred while writing back trace, hence exiting

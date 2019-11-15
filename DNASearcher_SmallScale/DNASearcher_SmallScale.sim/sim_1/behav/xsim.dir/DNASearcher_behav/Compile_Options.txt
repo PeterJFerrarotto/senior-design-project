@@ -1,0 +1,1 @@
+-wto "c9c1581bd88c4a03a0a0aeb7a035fde2" --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "DNASearcher_behav" "xil_defaultlib.DNASearcher" "xil_defaultlib.glbl" -log "elaborate.log" 

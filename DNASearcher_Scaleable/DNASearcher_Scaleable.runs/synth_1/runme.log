@@ -1,0 +1,285 @@
+
+*** Running vivado
+    with args -log DNASearcher.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source DNASearcher.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source DNASearcher.tcl -notrace
+Command: synth_design -top DNASearcher -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5612 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 435.406 ; gain = 155.082
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'DNASearcher' [D:/SeniorDesign2/DNASearcher_Scaleable/DNASearcher_Scaleable.srcs/sources_1/new/DNASearcher.v:3]
+	Parameter BIG_SEQ_SIZE bound to: 32 - type: integer 
+	Parameter SMALL_SEQ_SIZE bound to: 8 - type: integer 
+	Parameter OUTER_LOCATION_NUM_SIZE bound to: 5 - type: integer 
+	Parameter INNER_LOCATION_NUM_SIZE bound to: 3 - type: integer 
+	Parameter IDLE bound to: 7'b0000001 
+	Parameter INPUT bound to: 7'b0000010 
+	Parameter START_SEARCH bound to: 7'b0000100 
+	Parameter SEARCH bound to: 7'b0001000 
+	Parameter START_CHECK_SEQ bound to: 7'b0010000 
+	Parameter CHECK_SEQ bound to: 7'b0100000 
+	Parameter COMPLETE bound to: 7'b1000000 
+WARNING: [Synth 8-6014] Unused sequential element indexStart_reg was removed.  [D:/SeniorDesign2/DNASearcher_Scaleable/DNASearcher_Scaleable.srcs/sources_1/new/DNASearcher.v:64]
+INFO: [Synth 8-256] done synthesizing module 'DNASearcher' (1#1) [D:/SeniorDesign2/DNASearcher_Scaleable/DNASearcher_Scaleable.srcs/sources_1/new/DNASearcher.v:3]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 518.809 ; gain = 238.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 518.809 ; gain = 238.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 518.809 ; gain = 238.484
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'DNASearcher'
+INFO: [Synth 8-5546] ROM "DONE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "seqSmall" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 518.809 ; gain = 238.484
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 8     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 2     
+	   3 Input      7 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   8 Input      5 Bit        Muxes := 2     
+	   8 Input      3 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module DNASearcher 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 8     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 2     
+	   3 Input      7 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   8 Input      5 Bit        Muxes := 2     
+	   8 Input      3 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "seqSmall" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DONE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'seqSmall_reg[7]' (FDE) to 'firstBP_reg[3]'
+INFO: [Synth 8-3886] merging instance 'seqSmall_reg[6]' (FDE) to 'firstBP_reg[2]'
+INFO: [Synth 8-3886] merging instance 'seqSmall_reg[5]' (FDE) to 'firstBP_reg[1]'
+INFO: [Synth 8-3886] merging instance 'seqSmall_reg[4]' (FDE) to 'firstBP_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\state_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (state_reg[7]) is unused and will be removed from module DNASearcher.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:25 ; elapsed = 00:01:30 . Memory (MB): peak = 735.504 ; gain = 455.180
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:25 ; elapsed = 00:01:30 . Memory (MB): peak = 735.504 ; gain = 455.180
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (innerPos_reg[1]) is unused and will be removed from module DNASearcher.
+WARNING: [Synth 8-3332] Sequential element (innerPos_reg[0]) is unused and will be removed from module DNASearcher.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:26 ; elapsed = 00:01:31 . Memory (MB): peak = 736.957 ; gain = 456.633
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:35 ; elapsed = 00:01:40 . Memory (MB): peak = 736.957 ; gain = 456.633
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:35 ; elapsed = 00:01:40 . Memory (MB): peak = 736.957 ; gain = 456.633
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:35 ; elapsed = 00:01:40 . Memory (MB): peak = 736.957 ; gain = 456.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:35 ; elapsed = 00:01:40 . Memory (MB): peak = 736.957 ; gain = 456.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:35 ; elapsed = 00:01:40 . Memory (MB): peak = 736.957 ; gain = 456.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:35 ; elapsed = 00:01:40 . Memory (MB): peak = 736.957 ; gain = 456.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT2 |    13|
+|3     |LUT3 |    26|
+|4     |LUT4 |    13|
+|5     |LUT5 |    25|
+|6     |LUT6 |    61|
+|7     |FDRE |    77|
+|8     |FDSE |     1|
+|9     |IBUF |    48|
+|10    |OBUF |     7|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   272|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:35 ; elapsed = 00:01:40 . Memory (MB): peak = 736.957 ; gain = 456.633
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:35 ; elapsed = 00:01:41 . Memory (MB): peak = 736.957 ; gain = 456.633
+Synthesis Optimization Complete : Time (s): cpu = 00:01:35 ; elapsed = 00:01:41 . Memory (MB): peak = 736.957 ; gain = 456.633
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 48 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+20 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:03 ; elapsed = 00:02:13 . Memory (MB): peak = 900.742 ; gain = 627.301
+INFO: [Common 17-1381] The checkpoint 'D:/SeniorDesign2/DNASearcher_Scaleable/DNASearcher_Scaleable.runs/synth_1/DNASearcher.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.170 . Memory (MB): peak = 900.742 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Jan 28 11:57:40 2018...
